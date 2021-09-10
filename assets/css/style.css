@@ -1,0 +1,98 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #dddddd;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.pw-container{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    min-width: 50vw;
+}
+
+.pw-header{
+    padding: 20px;
+}
+
+.pw{
+    background-color: #ccc;
+    display: flex;
+    font: 1.5rem;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    position: relative;
+    padding: 20px;
+    overflow: auto;
+}
+
+.pw span{
+    background-color: #ccc;
+}
+
+.pw button{
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 4px;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    transform: translate(0, 20%);
+    transition: opacity 0.2s ease, transgorm 0.2s ease;
+    opacity: 0;
+}
+
+.pw .rotated{
+    transform: rotate(90deg);
+}
+
+.pw:hover button{
+    opacity: 1;
+    transform: translate(0, 0%);
+}
+
+.pw-body{
+    padding: 0 20px 20px;
+}
+
+input#len{
+    border: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 4px;
+    width: 40px;
+}
+
+input#len:focus{
+    outline: 0;
+}
+
+.form-control{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+}
+
+.generate{
+    background-color: #ccc;
+    border: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    font-size: 26px;
+    font-weight: 500;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    width: 100%;
+}
